@@ -1,0 +1,34 @@
+A. BUBBLE SORT ALGORITHM
+B. SELECTION SORT ALGORITHM
+C. INSERTION SORT ALGORITHM
+Counting unit: Milliseconds
+Num of sample: 10000
+
+1. Unsorted Data
+        Test 1: A 80  B 50  C 48
+        Test 2: A 75  B 73  C 44
+        Test 3: A 75  B 49  C 43
+        --> Processing speed: C > B > A, particularly A is approximately twice faster than C.
+
+2. Ascending Sorted Data
+    2.1 Ascending Sort
+            Test 1: A 37  B 19  C 1
+            Test 2: A 24  B 18  C 1
+            Test 3: A 28  B 27  C 0
+        --> Processing speed: C > B > A. Being compared to unsorted data, all sorts are running with their best case.
+    2.2 Conversing Sort (Descending Sort)
+            Test 1: A 86  B 141  C 80
+            Test 2: A 85  B 141  C 80
+            Test 3: A 88  B 140  C 82
+            --> Processing speed: C > A > B. In this case, selection sort show the worst performance.
+
+    GENERAL EXPLANATION
+                                  A. BUBBLE SORT ALGORITHM                     C. INSERTION SORT ALGORITHM
+    * Best Case Analysis:         + running O (n) time.                        + running O (n) time.
+    * Average Case Analysis:      + running O (n^2) time.                      + running O (n^2) time.
+    * Worst Case Analysis:        + running O (n^2) time.                      + running O (n^2) time.
+    * Number of swaps:            Less number of swaps                         High number of swaps
+                                (compare 1 element vs a sorted sup-array)    (Compare and swap neighbours)
+
+    CONCLUSION
+        All in all, insertion sort performs better in most cases.
